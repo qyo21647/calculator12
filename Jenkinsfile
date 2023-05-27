@@ -3,6 +3,7 @@ pipeline {
 	stages {
 		stage('Compile') {
 			steps {
+				sh 'chmod +x gradle'
 				sh './gradlew compileJava'
 			}
 		}
